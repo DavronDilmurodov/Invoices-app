@@ -40,7 +40,7 @@ export const Create = () => {
 
     const res = await axios
       .post(
-        "http://localhost:3000/invoice",
+        "http://13.209.46.214:3000/invoice",
         {
           name,
           email,

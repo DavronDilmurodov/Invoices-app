@@ -20,7 +20,7 @@ export const Login = () => {
     const password = passwordRef.current.value.trim();
 
     const res = await axios
-      .post("http://localhost:3000/auth/login", {
+      .post("http://13.209.46.214:3000/auth/login", {
         username,
         password,
       })

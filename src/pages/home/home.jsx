@@ -21,7 +21,7 @@ export const Home = () => {
 
   async function getData() {
     const res = await axios
-      .get(`http://localhost:3000/invoice?page=${page}`, {
+      .get(`http://13.209.46.214:3000/invoice?page=${page}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .catch((err) => {
@@ -59,7 +59,7 @@ export const Home = () => {
     const newToken = localStorage.getItem("token");
 
     const res = await axios
-      .get(`http://localhost:3000/invoice/${id}`, {
+      .get(`http://13.209.46.214:3000/invoice/${id}`, {
         headers: { Authorization: `Bearer ${newToken}` },
       })
       .catch((err) => {

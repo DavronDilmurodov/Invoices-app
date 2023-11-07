@@ -42,7 +42,7 @@ export const Edit = () => {
 
     const res = await axios
       .put(
-        `http://localhost:3000/invoice/${id}`,
+        `http://13.209.46.214:3000/invoice/${id}`,
         {
           name,
           email,
