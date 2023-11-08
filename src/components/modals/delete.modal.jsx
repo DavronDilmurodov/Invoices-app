@@ -12,7 +12,7 @@ export const DeleteModal = ({ visible, onClose, id, token }) => {
 
   const onDelete = async () => {
     await axios
-      .delete(`http://localhost:3000/invoice/${id}`, {
+      .delete(`http://13.209.46.214:3000/invoice/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .catch((err) => {
